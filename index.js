@@ -95,6 +95,17 @@ const fi = (function() {
       return (!!num) ? nArray : nArray[0]
     },
 
+
+    compact: function(array) {
+      let compactArray = []
+
+      for (const i of array) {
+        if (!!i) {
+          compactArray.push(i)
+        }
+      }
+      return compactArray
+      
     map: function() {
 
     },
