@@ -106,9 +106,14 @@ const fi = (function() {
       }
       return compactArray
       
-    map: function() {
+  sortBy: function(array, callback) {
+    let sortedArray = [...array]
 
-    },
+    return sortedArray.sort(function(a,b) {
+      return callback(a) - callback(b)
+  })
+
+},
 
     reduce: function() {
 
